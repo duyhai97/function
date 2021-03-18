@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        function timminmax(aa){
+            let min = aa[0];
+            for (let i = 0; i < aa.length; i++) {
+                if(aa[i]<min){
+                    min=aa[i];
+                }
+            }
+            return min
+        }
+        let aa1 = [0, 0, 0, 0, 0, 0]
+        let min = timminmax(aa1);
+        alert("gia tri nho nhat cua mang la: " + min)
+</script>
+</body>
+</html>

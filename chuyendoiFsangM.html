@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>nhập số feed</div>
+<input id="nhapfeet" type="number"
+       oninput="chuyendoi1(this.value)"
+       onchange="chuyendoi1(this.value)">
+<div>Số Mét:  <span id="met"></span></div><br/><br/><br/>
+<div>Nhập số mét</div>
+<input id="nhapmet" type="number"
+       oninput="chuyendoi2(this.value)"
+       onchange="chuyendoi2(this.value)">
+<div>Số Feed: <span id="feet"></span></div>
+
+<script>
+    function chuyendoi1(type1){
+        type1 = parseFloat(type1)
+        document.getElementById("met").innerHTML = 0.305*type1
+    }
+
+    function chuyendoi2(type2){
+        type2 = parseFloat(type2)
+        document.getElementById("feet").innerHTML = 3.279*type2
+
+
+    }
+</script>
+</body>
+
+</html>
