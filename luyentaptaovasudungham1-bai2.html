@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhapso">
+<button onclick="tinh()">Try it</button>
+<div>ket qua : <span id="aa"></span></div>
+<script>
+
+function doiSo(a) {
+   a++;
+    return a
+}
+function tinh(){
+    let b = document.getElementById("nhapso").value;
+    let c = doiSo(b);
+    document.getElementById("aa").innerText = "kết quả:" + c
+}
+
+</script>
+</body>
+</html>

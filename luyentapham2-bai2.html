@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>Tính diện tích</h2><br>
+<input id="nhapso" placeholder="nhập bán kính"
+oninput="dientich(this.value)"
+onchange="dientich(this.value)" >
+<div>kết quả: <span id="kq"></span> </div><br/><br/>
+
+<h2>Tính chu vi</h2><br>
+<input placeholder="Nhập bán kính"
+oninput="chuvi(this.value)"
+onchange="chuvi(this.value)">
+<div>Kết quả: <span id="qq"></span></div>
+
+<script>
+    function dientich(R){
+      let S = R*R*3.14
+document.getElementById("kq").innerHTML = S
+    }
+
+    function chuvi(r){
+        let C = 3.14*r*2
+        document.getElementById("qq").innerHTML = C
+    }
+</script>
 </body>
 </html>
