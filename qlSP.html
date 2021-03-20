@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+       /*.giao-dien {*/
+       /*    background-color: darkgreen;*/
+       /*    width: 80px;*/
+       /*    height: 35px;*/
+       /*    border: 1px solid green;*/
+       /*}*/
+       /*.sua-lol {*/
+       /*     background-color: darkgreen;*/
+       /*    width: 80;*/
+       /*    height: 35;*/
+       /*    border: 1px solid green;*/
+       /*}*/
+   </style>
+</head>
+<body>
+    <div>Add New Product</div>
+    <input id="newTask" placeholder="New product" onchange="createNewTask()"/>
+    <button onclick="showAll()">Add</button>
+    <br/><br/>
+    <h2>Display All Product</h2>
+    <table border="1px">
+        <tr>
+            <th>Product Name</th>
+            <th>action</th>
+        </tr>
+        <tbody id="list">
+        <tr>
+            <td></td>
+            <td>
+                <button>Xoa</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <script src="qlSP.js"></script>
+</body>
+</html>

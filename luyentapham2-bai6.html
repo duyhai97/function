@@ -5,8 +5,11 @@
     <title>Title</title>
 </head>
 <body>
+<input type="number" id="nhapso">
+<button onclick="kiemtra()">Nhấn để kiểm tra</button>
+<div id="kq"></div>
 <script>
-    let n = +prompt("nhap so nguyen duong");
+
     function kiemtraSND(n){
         if (n>0){
             return true;
@@ -15,7 +18,12 @@
             return false;
         }
     }
-    alert(kiemtraSND(n));
+   function kiemtra(){
+        let a = document.getElementById("nhapso").value;
+        let qq = kiemtraSND(a);
+        document.getElementById("kq").innerHTML = qq;
+   }
+
 </script>
 </body>
 </html>
